@@ -95,11 +95,6 @@ jupyterlab==4.2.5
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterthemes==0.20.0
-Kivy==2.3.1
-kivy-deps.angle==0.4.0
-kivy-deps.glew==0.3.1
-Kivy-Garden==0.1.5
-kivy_deps.sdl2==0.8.0
 kiwisolver==1.4.7
 lesscpy==0.15.1
 lxml==5.2.2
