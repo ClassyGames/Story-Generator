@@ -164,7 +164,6 @@ python-json-logger==2.0.7
 pyttsx3==2.98
 pytube==15.0.0
 pytz==2024.1
-pywin32==3.10
 pywin32-ctypes==0.2.3
 pywinpty==2.0.13
 PyYAML==6.0.2
