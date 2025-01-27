@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Generator</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Panel: Chat History -->
+        <div class="left-panel">
+            <h2>Chat History</h2>
+            <div id="historyList"></div>
+        </div>
+
+        <!-- Mid Panel: Story Display -->
+        <div class="mid-panel">
+            <h1 id="storyName">Story Name Will Appear Here</h1>
+            <p id="storyContent">Please select a story and generate it...</p>
+            <div id="myProgress" class="hidden">
+                <div id="myBar"></div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Customizations -->
+        <div class="right-panel">
+            <h2>Story Customizations</h2>
+
+            <div class="story-options">
+                <h3>Choose Story Type</h3>
+                <div class="chat-types">
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Funny" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Funny</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Suspense" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Suspense</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Thriller" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Thriller</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Romance" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Romance</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Sci-Fi" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Sci-Fi</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Drama" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Drama</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Mystery" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Mystery</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Horror" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Horror</span>
+                    </label>
+                    <label class="checkbox-container">
+                        <input type="checkbox" value="Action" onchange="toggleGlow(this)">
+                        <span class="checkbox-text">Action</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="story-length">
+                <h3>Choose Story Length</h3>
+                <select id="storyLength">
+                    <option value="Very Short">Very Short</option>
+                    <option value="Short">Short</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Long">Long</option>
+                </select>
+            </div>
+
+            <div class="user-instructions">
+                <h3>User Instructions</h3>
+                <textarea id="userInstructions" placeholder="Enter instructions here..."></textarea>
+            </div>
+
+            <button onclick="generateStory()">Generate Story</button>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
